@@ -1,0 +1,144 @@
+/* ///////////////////////////////////////////////////////// */
+
+
+/* GENERAL */
+
+
+/* ///////////////////////////////////////////////////////// */
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+
+
+/* NAV */
+
+
+/* ///////////////////////////////////////////////////////// */
+
+#navbar {
+    background-color: rgb(195, 185, 185);
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-right: 4px solid grey;
+    overflow-y: auto;
+}
+
+#navbar header {
+    font-size: 2rem;
+    margin: 50px 0 100px 0;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    list-style: none;
+    border-top: 1px solid grey;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+
+
+/* MAIN */
+
+
+/* ///////////////////////////////////////////////////////// */
+
+main {
+    width: 68%;
+    height: 100vh;
+    float: right;
+    overflow-y: scroll;
+}
+
+
+/* SECTION */
+
+
+/* ///////////////////////////////////////////////////////// */
+
+section header {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+section code {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+section p {
+    padding: 20px;
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+
+
+/* MEDIA QUERIES */
+
+
+/* ///////////////////////////////////////////////////////// */
+
+
+/* 848 and below*/
+
+@media screen and (max-width: 848px) {
+    #navbar {
+        /* top: 0; */
+        width: 100vw;
+        max-height: 300px;
+        font-size: 12px;
+        /* position: static; */
+    }
+    #navbar header {
+        font-size: 1.5rem;
+        height: 80px;
+        width: 99vw;
+        padding-top: 20px;
+        margin: 0;
+        background-color: white;
+        position: absolute;
+    }
+    #navbar ul {
+        margin-top: 100px;
+    }
+    main {
+        width: 100vw;
+        overflow: visible;
+    }
+    nav li {
+        padding: 0;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+}
